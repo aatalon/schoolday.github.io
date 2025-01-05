@@ -22,6 +22,11 @@
         h1 {
             font-size: 2.5rem;
             margin-bottom: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #333;
+            width: 0;
+            animation: typing 3s steps(22, end) forwards;
         }
 
         #demo {
@@ -50,6 +55,15 @@
             font-size: 0.9rem;
             color: #888;
         }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 18.5ch;
+            }
+        }
     </style>
 </head>
 <body>
@@ -65,8 +79,10 @@
         function myFunction() {
             const date = new Date().getDate();
             const oddDays = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31];
-            const message = oddDays.includes(date) ? "DAY 1" : " DAY 2";
-            document.getElementById("demo").innerHTML = message;
+            const message = oddDays.includes(date) ? "DAY 1" : "DAY 2";
+            setTimeout(() => {
+                document.getElementById("demo").innerHTML = message;
+            }, 3100);
         }
 
         myFunction();
