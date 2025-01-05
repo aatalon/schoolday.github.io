@@ -1,1 +1,0 @@
-# schoolday.github.io
