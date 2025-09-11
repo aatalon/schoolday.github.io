@@ -8,4 +8,4 @@ This project was created for my friend Abdo to calculate which period he would h
 
 ## Credits
 
-This project was created entirely by me and was coded entirely by me. It was created and published on `1/5/2025` and was my first ever published project. You may use any of the resources, and it is fully open-sourced.
+This project was created entirely by me and was coded entirely by me. It was created and published on `1/5/2025` and was my first ever published project on this GitHub account. You may use any of the resources, and it is fully open-sourced.
